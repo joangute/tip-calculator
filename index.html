@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+
+</head>
+<body>
+  <header><img src="images/logo.svg" alt="logo"></header>
+  <main>
+    <form action="#">
+      <div class="bill">
+        <div class="flex">
+          <label for="bill">Bill</label>
+          <span class="message"></span>
+        </div>
+        <input type="text" id="bill" placeholder="0" inputmode="numeric">
+      </div>
+      <div class="tips">
+        <div class="flex">
+          <label>Select Tip %</label>
+          <span class="message"></span>
+        </div>
+        <div class="tip_percentages">
+          <button type="button" value="0.05">5%</button>
+          <button type="button" value="0.1">10%</button>
+          <button type="button" value="0.15">15%</button>
+          <button type="button" value="0.25">25%</button>
+          <button type="button" value="0.5">50%</button>
+          <input type="text" placeholder="Custom" class="custom">
+        </div>
+      </div>
+      <div class="people">
+        <div class="flex">
+          <label for="people">Number of People</label>
+          <span class="message"></span>
+        </div>
+        <input type="text" placeholder="0" id="people">
+      </div>
+    </form>
+    <div class="result">
+      <div>
+        <div class="flex">
+          <span class="title">Tip Amount<br>
+            <span class="subtitle">/ person</span>
+          </span>
+          <span class="number tip_person">$0.00</span>
+        </div>
+        <div class="flex">
+          <span class="title">Total<br>
+            <span class="subtitle">/ person</span>
+          </span>
+          <span class="number total_person">$0.00</span>
+        </div>
+      </div>
+      <button type="button" class="reset">RESET</button>
+    </div>
+  </main>
+  <script src="./js/tipCalculator.js"></script>  
+</body>
+</html>
